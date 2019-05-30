@@ -1,21 +1,21 @@
-# [Argon Dashboard Angular](https://demos.creative-tim.com/argon-dashboard-angular/?ref=ada-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Dashboard%20is%20a%20Free%20Bootstrap%20and%20Angular%20Dashboard%20made%20using%20angular-cli%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/argon-dashboard-angular%20%23angular%20%23angular-cli%20%23argon%20%23argondesign%20%23angulardashboard%20%23argonangular%20%23angulardesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
+# [Reetayn Dashboard Angular](https://demos.creative-tim.com/reetayn-ui/?ref=ada-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Reetayn%20Dashboard%20is%20a%20Free%20Bootstrap%20and%20Angular%20Dashboard%20made%20using%20angular-cli%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/reetayn-ui%20%23angular%20%23angular-cli%20%23reetayn%20%23reetayndesign%20%23angulardashboard%20%23reetaynangular%20%23angulardesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
 
 
 
- ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-angular/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-angular/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/reetayn-ui.svg?maxAge=2592000)](https://github.com/creativetimofficial/reetayn-ui/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/reetayn-ui.svg?maxAge=2592000)](https://github.com/creativetimofficial/reetayn-ui/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 
-![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/argon-dashboard-angular.gif)
+![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/reetayn-ui/reetayn-ui.gif)
 
 **Fully Coded Components**
 
-Argon Dashboard Angular is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in color, that you can easily modify using SASS files.
+Reetayn Dashboard Angular is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in color, that you can easily modify using SASS files.
 You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Dashboard is coming with pre-built examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
 Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
 
 **Complex Documentation**
 
-Each element is well presented in a very complex documentation. You can read more about the idea behind this [dashboard here](https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme). You can check the [components here](https://demos.creative-tim.com/argon-dashboard-angular/documentation/alerts?ref=ada-github-readme) and the [foundation here](https://demos.creative-tim.com/argon-dashboard-angular/documentation/colors?ref=ada-github-readme).
+Each element is well presented in a very complex documentation. You can read more about the idea behind this [dashboard here](https://demos.creative-tim.com/reetayn-ui/documentation/tutorial?ref=ada-github-readme). You can check the [components here](https://demos.creative-tim.com/reetayn-ui/documentation/alerts?ref=ada-github-readme) and the [foundation here](https://demos.creative-tim.com/reetayn-ui/documentation/colors?ref=ada-github-readme).
 
 **Example Pages**
 
@@ -37,43 +37,43 @@ If you want to get inspiration or just show something directly to your clients, 
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-angular)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nodejs-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-nodejs)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" style="background:white"/>](https://www.creative-tim.com/product/argon-dashboard-laravel)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/argon-dashboard/tree/sketch)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/reetayn-ui)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/reetayn-ui-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/reetayn-ui)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nodejs-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/reetayn-ui-nodejs)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" style="background:white"/>](https://www.creative-tim.com/product/reetayn-ui-laravel)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/reetayn-ui/tree/sketch)
 
 
 
 | HTML | React | Angular  |
 | --- | --- | ---  |
-| [![Argon Dashboard HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard/argon-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard?ref=ada-github-readme)  | [![Argon Dashboard React](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/argon-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-react?ref=ada-github-readme)  | [![Argon Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/argon-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme)
+| [![Reetayn Dashboard HTML](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui/reetayn-ui.jpg?raw=true)](https://www.creative-tim.com/product/reetayn-ui?ref=ada-github-readme)  | [![Reetayn Dashboard React](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui-react/reetayn-ui-react.jpg?raw=true)](https://www.creative-tim.com/product/reetayn-ui-react?ref=ada-github-readme)  | [![Reetayn Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui/reetayn-ui.jpg?raw=true)](https://www.creative-tim.com/product/reetayn-ui?ref=ada-github-readme)
 
 | NodeJS | Laravel |
 | ---  | --- |
-| [![Argon Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-nodejs?ref=ada-github-readme) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel?ref=ada-github-readme) |
+| [![Reetayn Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui-nodejs/reetayn-ui-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/reetayn-ui-nodejs?ref=ada-github-readme) | [![Reetayn Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui-laravel/reetayn-ui-laravel.jpg?raw=true)](https://www.creative-tim.com/product/reetayn-ui-laravel?ref=ada-github-readme) |
 
 ## Demo
 
 | Dashboard Page | Icons Page | User Profile Page  | Tables Page | Login Page | Register Page  |
 | --- | --- | ---  | --- | --- | ---  |
-| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/dashboard.png)](https://demos.creative-tim.com/argon-dashboard-angular/dashboard?ref=ada-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/icons.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/icons?ref=ada-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/user.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/user?ref=ada-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/tables.png)](https://demos.creative-tim.com/argon-dashboard-angular/tables?ref=ada-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/login.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/login?ref=ada-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/register.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/register?ref=ada-github-readme)  
+| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/reetayn-ui/dashboard.png)](https://demos.creative-tim.com/reetayn-ui/dashboard?ref=ada-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui/icons.png?raw=true)](https://demos.creative-tim.com/reetayn-ui/icons?ref=ada-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui/user.png?raw=true)](https://demos.creative-tim.com/reetayn-ui/user?ref=ada-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/reetayn-ui/tables.png)](https://demos.creative-tim.com/reetayn-ui/tables?ref=ada-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui/login.png?raw=true)](https://demos.creative-tim.com/reetayn-ui/login?ref=ada-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/reetayn-ui/register.png?raw=true)](https://demos.creative-tim.com/reetayn-ui/register?ref=ada-github-readme)  
 
-[View More](https://demos.creative-tim.com/argon-dashboard-angular/dashboard)
+[View More](https://demos.creative-tim.com/reetayn-ui/dashboard)
 
 
 ## Quick start
 
-- [Download from Github](https://github.com/creativetimofficial/argon-dashboard-angular/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme).
-- Clone the repo: `git clone https://github.com/creativetimofficial/argon-dashboard-angular.git`.
+- [Download from Github](https://github.com/creativetimofficial/reetayn-ui/archive/master.zip).
+- [Download from Reetayn](https://www.creative-tim.com/product/reetayn-ui?ref=ada-github-readme).
+- Clone the repo: `git clone https://github.com/creativetimofficial/reetayn-ui.git`.
 
 
 ## Documentation
-The documentation for the Argon Dashboard Angular is hosted at our [website](https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme).
+The documentation for the Reetayn Dashboard Angular is hosted at our [website](https://demos.creative-tim.com/reetayn-ui/documentation/tutorial?ref=ada-github-readme).
 
 
 ## File Structure
 Within the download you'll find the following directories and files:
 
 ```
-argon-dashboard-angular
+reetayn-ui
 ├── CHANGELOG.md
 ├── README.md
 ├── angular.json
@@ -163,7 +163,7 @@ argon-dashboard-angular
 │   │   ├── img
 │   │   ├── scss
 │   │   │   ├── angular-differences
-│   │   │   ├── argon.scss
+│   │   │   ├── reetayn.scss
 │   │   │   ├── core
 │   │   │   └── custom
 │   │   └── vendor
@@ -192,12 +192,12 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://demos.creative-tim.com/argon-dashboard-angular/dashboard?ref=ada-github-readme>
-- Download Page: <https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme>
-- Documentation: <https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme>
+- Demo: <https://demos.creative-tim.com/reetayn-ui/dashboard?ref=ada-github-readme>
+- Download Page: <https://www.creative-tim.com/product/reetayn-ui?ref=ada-github-readme>
+- Documentation: <https://demos.creative-tim.com/reetayn-ui/documentation/tutorial?ref=ada-github-readme>
 - License Agreement: <https://www.creative-tim.com/license?ref=ada-github-readme>
 - Support: <https://www.creative-tim.com/contact-us?ref=ada-github-readme>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard-angular/issues?ref=ada-github-readme)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/reetayn-ui/issues?ref=ada-github-readme)
 
 ## Reporting Issues
 
@@ -209,21 +209,21 @@ We use GitHub Issues as the official bug tracker for the Material Kit. Here are 
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=ada-github-readme)
+- Copyright 2018 Reetayn (https://www.creative-tim.com/?ref=ada-github-readme)
 
-- Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-angular/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/reetayn-ui/blob/master/LICENSE.md)
 
 ## Useful Links
 
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=ada-github-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/?ref=ada-github-readme)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=ada-github-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=ada-github-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=ada-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=ada-github-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=ada-github-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=ada-github-readme) from Creative Tim
+- [Blog Reetayn](http://blog.creative-tim.com/?ref=ada-github-readme)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=ada-github-readme) from Reetayn
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=ada-github-readme) from Reetayn
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=ada-github-readme) from Reetayn
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=ada-github-readme) from Reetayn
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=ada-github-readme) from Reetayn
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=ada-github-readme) from Reetayn
 - Check our Bundles [here](https://www.creative-tim.com/bundles?ref=ada-github-readme)
 
 ### Social Media
