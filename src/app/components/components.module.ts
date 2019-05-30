@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserDropdownComponent } from './user-dropdown/user-dropdown.component';
 import { MainTableComponent } from './main-table/main-table.component';
+import { ProfileEditComponent } from '../pages/user-profile/profile-edit/profile-edit.component';
 
 @NgModule({
   imports: [
@@ -19,14 +20,16 @@ import { MainTableComponent } from './main-table/main-table.component';
     NavbarComponent,
     SidebarComponent,
     UserDropdownComponent,
-    MainTableComponent
+    MainTableComponent,
+    ProfileEditComponent
   ],
   exports: [
     FooterComponent,
     NavbarComponent,
     SidebarComponent,
     UserDropdownComponent,
-    MainTableComponent
+    MainTableComponent,
+    ProfileEditComponent
   ]
 })
 export class ComponentsModule { }
