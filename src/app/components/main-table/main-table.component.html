@@ -24,8 +24,11 @@
           </thead>
           <tbody>
             <tr>
-              <td *ngFor="let team of teams" scope="col">
-                {{team.rank}}
+              <td *ngFor="let team of teams" scope="col" class="hover-data">
+                <!-- <div class="rounded-circle text-center" style="height: 64px;width: 64px;border-radius: 100%;background:lightgray;"> -->
+                  <p class="text-center" style="font-size: 36px;color:green" *ngIf="team.retention > 90">{{team.retention}}%</p>
+                  <p class="text-center" style="font-size: 36px;color:red" *ngIf="!(team.retention > 90)">{{team.retention}}%</p>
+                <!-- </div> -->
               </td>
             </tr>
           </tbody>

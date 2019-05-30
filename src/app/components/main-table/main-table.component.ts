@@ -17,26 +17,26 @@ import {
 export class MainTableComponent implements OnInit {
 
   teams = [
-    {"name": "team1", "rank" : 1 },
-    {"name": "team2", "rank" : 2 },
-    {"name": "team3", "rank" : 3 },
-    {"name": "team4", "rank" : 4 },
-    {"name": "team5", "rank" : 5 },
-    {"name": "team6", "rank" : 6 },
-    {"name": "team7", "rank" : 7 },
-    {"name": "team8", "rank" : 8 },
-    {"name": "team9", "rank" : 9 },
-    {"name": "team10", "rank" : 10 },
-    {"name": "team11", "rank" : 11 },
-    {"name": "team12", "rank" : 12 },
-    {"name": "team13", "rank" : 13 },
-    {"name": "team14", "rank" : 14 },
-    {"name": "team15", "rank" : 15 },
-    {"name": "team16", "rank" : 16 },
-    {"name": "team17", "rank" : 17 },
-    {"name": "team18", "rank" : 18 },
-    {"name": "team19", "rank" : 19 },
-    {"name": "team20", "rank" : 20 }
+    {"name": "team1", "retention" : 80 },
+    {"name": "team2", "retention" : 82 },
+    {"name": "team3", "retention" : 93 },
+    {"name": "team4", "retention" : 74 },
+    {"name": "team5", "retention" : 55 },
+    {"name": "team6", "retention" : 68 },
+    {"name": "team7", "retention" : 79 },
+    {"name": "team8", "retention" : 89 },
+    {"name": "team9", "retention" : 99 },
+    {"name": "team10", "retention" : 90 },
+    {"name": "team11", "retention" : 79 },
+    {"name": "team12", "retention" : 96 },
+    {"name": "team13", "retention" : 87 },
+    {"name": "team14", "retention" : 83 },
+    {"name": "team15", "retention" : 91 },
+    {"name": "team16", "retention" : 75 },
+    {"name": "team17", "retention" : 79 },
+    {"name": "team18", "retention" : 85 },
+    {"name": "team19", "retention" : 99 },
+    {"name": "team20", "retention" : 82 }
   ]
 
   ngOnInit() { }
