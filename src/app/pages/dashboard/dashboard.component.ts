@@ -67,7 +67,6 @@ export class DashboardComponent implements OnInit {
     }
   ];
 
-
   constructor() { }
 
   ngOnInit() {
@@ -93,15 +92,9 @@ export class DashboardComponent implements OnInit {
     var chartSales = document.getElementById('chart-sales');
 
     this.salesChart = new Chart(chartSales, {
-			type: 'line',
-			options: chartExample1.options,
-			data: chartExample1.data
-		});
+      type: 'line',
+      options: chartExample1.options,
+      data: chartExample1.data
+    });
   }
-
-  public updateOptions() {
-    this.salesChart.data.datasets[0].data = this.data;
-    this.salesChart.update();
-  }
-
 }

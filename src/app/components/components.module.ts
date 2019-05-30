@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserDropdownComponent } from './user-dropdown/user-dropdown.component';
+import { MainTableComponent } from './main-table/main-table.component';
 
 @NgModule({
   imports: [
@@ -17,12 +18,15 @@ import { UserDropdownComponent } from './user-dropdown/user-dropdown.component';
     FooterComponent,
     NavbarComponent,
     SidebarComponent,
-    UserDropdownComponent
+    UserDropdownComponent,
+    MainTableComponent
   ],
   exports: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    UserDropdownComponent,
+    MainTableComponent
   ]
 })
 export class ComponentsModule { }
