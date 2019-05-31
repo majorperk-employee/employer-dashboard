@@ -18,6 +18,10 @@ export class DashboardComponent implements OnInit {
 
   public datasets: any;
   public data: any;
+  
+  public labelsets: any;
+  public labels: any;
+  private label: number = 0;
   public salesChart;
   public clicked: boolean = true;
   public clicked1: boolean = false;
@@ -77,6 +81,11 @@ export class DashboardComponent implements OnInit {
     ];
     this.data = this.datasets[0];
 
+    this.labelsets = [
+      ["Oct.","Nov.","Dec.","Jan.","Feb.","Mar.","Apr.","May","Jun."],
+      ["4/31","5/7","5/14","5/21","5/28","6/4","6/11","6/18","6/25"]
+    ];
+    this.labels = this.labelsets[0];
 
     var chartOrders = document.getElementById('chart-orders');
 
@@ -101,7 +110,9 @@ export class DashboardComponent implements OnInit {
   }
 
   public updateOptions() {
+    this.label = this.label==0 ? 1 : 0;
     this.salesChart.data.datasets[0].data = this.data;
+    this.salesChart.data.labels = this.labelsets[this.label];
     this.salesChart.update();
   }
 }
