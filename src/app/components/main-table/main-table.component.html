@@ -19,12 +19,12 @@
         <table class="table align-items-center table-flush">
           <thead class="bg-gradient-white text-default">
             <tr>
-              <th *ngFor="let team of teams" scope="col">{{team.name}}</th>
+              <th class="text-center" *ngFor="let team of teams" scope="col">{{team.name}}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td *ngFor="let team of teams" scope="col" class="hover-data">
+              <td selectable *ngFor="let team of teams" scope="col" class="hover-data">
                 <!-- <div class="rounded-circle text-center" style="height: 64px;width: 64px;border-radius: 100%;background:lightgray;"> -->
                   <p class="text-center" style="font-size: 36px;color:green" *ngIf="team.retention > 90">{{team.retention}}%</p>
                   <p class="text-center" style="font-size: 36px;color:red" *ngIf="!(team.retention > 90)">{{team.retention}}%</p>

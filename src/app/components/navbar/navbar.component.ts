@@ -12,6 +12,10 @@ export class NavbarComponent implements OnInit {
   public focus;
   public listTitles: any[];
   public location: Location;
+  currentView: string = "Global";
+
+  viewOptions: string[] = ["Global","Regional","Local","Team"];
+
   constructor(location: Location,  private element: ElementRef, private router: Router) {
     this.location = location;
   }
@@ -30,6 +34,10 @@ export class NavbarComponent implements OnInit {
         }
     }
     return 'Dashboard';
+  }
+
+  switchViews(view: string) {
+    this.currentView = view;
   }
 
 }

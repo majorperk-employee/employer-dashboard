@@ -4,7 +4,7 @@ import Chart from 'chart.js';
 // Code from: https://codepen.io/jedtrow/full/ygRYgo
 //
 
-Chart.elements.Rectangle.prototype.draw = function() {
+Chart.elements.Rectangle.prototype.draw = function () {
   var ctx = this._chart.ctx;
   var vm = this._view;
   var left, right, top, bottom, signX, signY, borderSkipped, radius;
@@ -209,11 +209,11 @@ export function chartOptions() {
       },
       doughnut: {
         cutoutPercentage: 83,
-        legendCallback: function(chart) {
+        legendCallback: function (chart) {
           var data = chart.data;
           var content = '';
 
-          data.labels.forEach(function(label, index) {
+          data.labels.forEach(function (label, index) {
             var bgColor = data.datasets[0].backgroundColor[index];
 
             content += '<span class="chart-legend-item">';
@@ -245,7 +245,7 @@ export function chartOptions() {
     ticks: {
       beginAtZero: true,
       padding: 10,
-      callback: function(value) {
+      callback: function (value) {
         if (!(value % 10)) {
           return value
         }
@@ -271,80 +271,12 @@ export function chartOptions() {
 }
 
 export const parseOptions = (parent, options) => {
-		for (var item in options) {
-			if (typeof options[item] !== 'object') {
-				parent[item] = options[item];
-			} else {
-				parseOptions(parent[item], options[item]);
-			}
-		}
-	}
-
-export const chartExample1 = {
-  options: {
-    scales: {
-      yAxes: [{
-        gridLines: {
-          color: colors.gray[900],
-          zeroLineColor: colors.gray[900]
-        },
-        ticks: {
-          callback: function(value) {
-            if (!(value % 10)) {
-              return '$' + value + 'k';
-            }
-          }
-        }
-      }]
+  for (var item in options) {
+    if (typeof options[item] !== 'object') {
+      parent[item] = options[item];
+    } else {
+      parseOptions(parent[item], options[item]);
     }
-  },
-  data: {
-    labels: ["Oct.","Nov.","Dec.","Jan.","Feb.","Mar.","Apr.","May","Jun."],
-    datasets: [{
-      label: 'Retention',
-      data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
-    }]
   }
 }
 
-export const chartExample2 = {
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            callback: function(value) {
-              if (!(value % 10)) {
-                //return '$' + value + 'k'
-                return value;
-              }
-            }
-          }
-        }
-      ]
-    },
-    tooltips: {
-      callbacks: {
-        label: function(item, data) {
-          var label = data.datasets[item.datasetIndex].label || "";
-          var yLabel = item.yLabel;
-          var content = "";
-          if (data.datasets.length > 1) {
-            content += label;
-          }
-          content += yLabel;
-          return content;
-        }
-      }
-    }
-  },
-  data: {
-    labels: ["Jan.","Feb.","Mar.","Apr.","May","Jun."],
-    datasets: [
-      {
-        label: "Sales",
-        data: [25, 20, 30, 22, 17, 29]
-      }
-    ]
-  }
-}

@@ -4,10 +4,13 @@ import Chart from 'chart.js';
 // core components
 import {
   chartOptions,
-  parseOptions,
-  chartExample1,
-  chartExample2
+  parseOptions
 } from "../../variables/charts";
+
+import {
+  lineChart,
+  barChart
+} from "../../components/main-table/main-table.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -94,16 +97,16 @@ export class DashboardComponent implements OnInit {
 
     var ordersChart = new Chart(chartOrders, {
       type: 'bar',
-      options: chartExample2.options,
-      data: chartExample2.data
+      options: barChart.options,
+      data: barChart.data
     });
 
     var chartSales = document.getElementById('chart-sales');
 
     this.salesChart = new Chart(chartSales, {
 			type: 'line',
-			options: chartExample1.options,
-			data: chartExample1.data
+			options: lineChart.options,
+			data: lineChart.data
     });
     
 
