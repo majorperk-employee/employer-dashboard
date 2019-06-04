@@ -1,23 +1,26 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-gradient-primary sticky-top"
   id="navbar-main">
   <div class="container-fluid">
+    <li class="nav-item" ngbDropdown placement="bottom-right">
+      <button class="btn btn-outline-white dropdown-toggle" type="button"
+        data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" ngbDropdownToggle>
+        {{currentView}}
+        <i class="ni ni-bold-down"></i>
+      </button>
+      <div class="dropdown-menu-arrow dropdown-menu-right" ngbDropdownMenu
+        style="border: 3px white;">
+        <div class="dropdown-header noti-title">
+          <h6 class="text-overflow m-0">Choose a filter:</h6>
+        </div>
+        <p selectable *ngFor="let view of viewOptions" class="dropdown-item"
+          (click)="switchViews(view)">{{view}}</p>
+      </div>
+    </li>
     <!-- Brand -->
     <a class="h4 mb-0 text-white text-uppercase d-none
       d-lg-inline-block"
       routerLinkActive="active" [routerLink]="['/dashboard']">{{getTitle()}}</a>
-    <li class="nav-item" ngbDropdown placement="bottom-right">
-      <a selectable class="text-white nav-link pr-0" role="button" ngbDropdownToggle>
-        {{currentView}}
-        <i class="ni ni-bold-down"></i>
-      </a>
-      <div class="dropdown-menu-arrow dropdown-menu-right" ngbDropdownMenu>
-        <div class="dropdown-header noti-title">
-          <h6 class="text-overflow m-0">Choose a filter:</h6>
-        </div>
-        <p selectable *ngFor="let view of viewOptions" class="dropdown-item" (click)="switchViews(view)">{{view}}</p>
-      </div>
-    </li>
-
     <!-- Form -->
     <!-- <form class="navbar-search navbar-search-dark form-inline mr-3 d-none
       d-md-flex ml-lg-auto">
@@ -32,7 +35,6 @@
         </div>
       </div>
     </form> -->
-
     <!-- User -->
     <ul class="navbar-nav align-items-center d-none d-md-flex">
       <app-user-dropdown></app-user-dropdown>

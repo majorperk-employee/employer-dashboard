@@ -76,7 +76,7 @@ $secondary:     #f7fafc !default;
 $success:       $green !default;
 $info:          $teal !default;
 $warning:       $orange !default;
-$danger:        $red !default;
+$danger:        #ef4822 !default;
 $light:         $gray-500 !default;
 $dark:          $gray-900 !default;
 $darker:        darken($gray-900, 15%) !default;
@@ -176,7 +176,6 @@ $shapes-dark-colors: map-merge((
   "span-4-bg":                  #d782d9,
   "span-5-bg":                  #008169
 ), $shapes-dark-colors);
-
 
 // Translucent color variations
 $translucent-color-opacity: .6 !default;
