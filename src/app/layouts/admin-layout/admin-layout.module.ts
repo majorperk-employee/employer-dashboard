@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { EmployeesComponent } from 'src/app/pages/employees/employees.component';
 // import { ToastrModule } from 'ngx-toastr';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { EmployeesComponent } from 'src/app/pages/employees/employees.component'
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    ComponentsModule
+    ComponentsModule,
+    MatTableModule
   ],
   declarations: [
     DashboardComponent,
