@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   public focus;
   public listTitles: any[];
   public location: Location;
-  currentView: string = "Global";
+  currentView: string = "Local";
 
   viewOptions: string[] = ["Global","Regional","Local","Team"];
 
