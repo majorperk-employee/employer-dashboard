@@ -14,6 +14,7 @@ import { TablesComponent } from '../../pages/tables/tables.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { EmployeesComponent } from 'src/app/pages/employees/employees.component';
+import { TeamsComponent } from 'src/app/pages/teams/teams.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 
@@ -38,6 +39,7 @@ import { MatSortModule } from '@angular/material/sort';
     DashboardComponent,
     UserProfileComponent,
     EmployeesComponent,
+    TeamsComponent,
     TablesComponent,
     IconsComponent,
     MapsComponent

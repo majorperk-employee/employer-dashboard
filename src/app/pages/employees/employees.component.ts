@@ -13,7 +13,7 @@ export class EmployeesComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  dataSource = new MatTableDataSource<any>(ELEMENT_DATA.sort(function(a,b){ return a.ReetaynScore < b.ReetaynScore ? 1 : a.ReetaynScore > b.ReetaynScore? -1 : 0 }));
+  dataSource = new MatTableDataSource<any>(EMPLOYEE_DATA.sort(function(a,b){ return a.ReetaynScore < b.ReetaynScore ? 1 : a.ReetaynScore > b.ReetaynScore? -1 : 0 }));
   displayedColumns: string[] = ["Employee Id", "Name", "ReetaynScore", "Notes"];
 
   constructor() { }
@@ -26,10 +26,10 @@ export class EmployeesComponent implements OnInit {
   get employeeCallout(): any[] {
     let callout = [];
     
-    let t1 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[0], performance: "Two thumbs up", icon: "fa fa-thumbs-up", color: "green"} : null;
-    let t2 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[1], performance: "Two thumbs up", icon: "fa fa-thumbs-up", color: "green"} : null;
-    let b1 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[ELEMENT_DATA.length-1], performance: "Needs a hand", icon: "fa fa-handshake", color: "danger"} : null;
-    let b2 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[ELEMENT_DATA.length-2], performance: "Needs a hand", icon: "fa fa-handshake", color: "danger"} : null;
+    let t1 = EMPLOYEE_DATA.length > 1 ? {employee: EMPLOYEE_DATA[0], performance: "Two thumbs up", icon: "fa fa-thumbs-up", color: "green"} : null;
+    let t2 = EMPLOYEE_DATA.length > 1 ? {employee: EMPLOYEE_DATA[1], performance: "Two thumbs up", icon: "fa fa-thumbs-up", color: "green"} : null;
+    let b1 = EMPLOYEE_DATA.length > 1 ? {employee: EMPLOYEE_DATA[EMPLOYEE_DATA.length-1], performance: "Needs a hand", icon: "fa fa-handshake", color: "danger"} : null;
+    let b2 = EMPLOYEE_DATA.length > 1 ? {employee: EMPLOYEE_DATA[EMPLOYEE_DATA.length-2], performance: "Needs a hand", icon: "fa fa-handshake", color: "danger"} : null;
 
     callout.push(t1, t2, b1, b2);
 
@@ -55,7 +55,7 @@ export interface employeeCallout {
   }
 }
 
-const ELEMENT_DATA: any[] = [
+const EMPLOYEE_DATA: any[] = [
   {id: 1, name: 'Troy Crema', ReetaynScore: 2.5, notes: ' employee notes'},
   {id: 2, name: 'Sam Seder', ReetaynScore: 99.2, notes: ' employee notes'},
   {id: 3, name: 'Sergei Hanka', ReetaynScore: 93.4, notes: ' employee notes'},
