@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-employees',
@@ -7,26 +10,70 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesComponent implements OnInit {
 
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+
+  dataSource = new MatTableDataSource<any>(ELEMENT_DATA.sort(function(a,b){ return a.ReetaynScore < b.ReetaynScore ? 1 : a.ReetaynScore > b.ReetaynScore? -1 : 0 }));
+  displayedColumns: string[] = ["Employee Id", "Name", "ReetaynScore", "Notes"];
+
   constructor() { }
 
   ngOnInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
-  
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+
+  get employeeCallout(): any[] {
+    let callout = [];
+    
+    let t1 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[0], performance: "Two thumbs up", icon: "fa fa-thumbs-up", color: "green"} : null;
+    let t2 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[1], performance: "Two thumbs up", icon: "fa fa-thumbs-up", color: "green"} : null;
+    let b1 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[ELEMENT_DATA.length-1], performance: "Needs a hand", icon: "fa fa-handshake", color: "danger"} : null;
+    let b2 = ELEMENT_DATA.length > 1 ? {employee: ELEMENT_DATA[ELEMENT_DATA.length-2], performance: "Needs a hand", icon: "fa fa-handshake", color: "danger"} : null;
+
+    callout.push(t1, t2, b1, b2);
+
+    return callout;
+  }
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 
 }
 
+export interface employee {
+  id: string;
+  name: string;
+  ReetaynScore: string;
+}
+
+export interface employeeCallout {
+  under: {
+    color: employee;
+    callout: string;
+  }
+}
 
 const ELEMENT_DATA: any[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {id: 1, name: 'Troy Crema', ReetaynScore: 2.5, notes: ' employee notes'},
+  {id: 2, name: 'Sam Seder', ReetaynScore: 99.2, notes: ' employee notes'},
+  {id: 3, name: 'Sergei Hanka', ReetaynScore: 93.4, notes: ' employee notes'},
+  {id: 4, name: 'Eric Seder', ReetaynScore: 95.2, notes: ' employee notes'},
+  {id: 5, name: 'Luke Snell', ReetaynScore: 3.8, notes: ' employee notes'},
+  {id: 6, name: 'Isaac Zhou', ReetaynScore: 98.0, notes: ' employee notes'},
+  {id: 7, name: 'Employee', ReetaynScore: 10.6, notes: ' employee notes'},
+  {id: 8, name: 'Employee', ReetaynScore: 19.9, notes: ' employee notes'},
+  {id: 9, name: 'Employee', ReetaynScore: 19.8, notes: ' employee notes'},
+  {id: 10, name: 'Employee', ReetaynScore: 27.9, notes: ' employee notes'},
+  {id: 11, name: 'Employee', ReetaynScore: 17.5, notes: ' employee notes'},
+  {id: 12, name: 'Employee', ReetaynScore: 42.2, notes: ' employee notes'},
+  {id: 13, name: 'Employee', ReetaynScore: 66.4, notes: ' employee notes'},
+  {id: 14, name: 'Employee', ReetaynScore: 95.2, notes: ' employee notes'},
+  {id: 15, name: 'Employee', ReetaynScore: 11.8, notes: ' employee notes'},
+  {id: 16, name: 'Employee', ReetaynScore: 11.0, notes: ' employee notes'},
+  {id: 17, name: 'Employee', ReetaynScore: 10.6, notes: ' employee notes'},
+  {id: 18, name: 'Employee', ReetaynScore: 19.9, notes: ' employee notes'},
+  {id: 19, name: 'Employee', ReetaynScore: 19.8, notes: ' employee notes'},
+  {id: 20, name: 'Employee', ReetaynScore: 27.9, notes: ' employee notes'},
 ];

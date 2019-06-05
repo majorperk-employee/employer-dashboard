@@ -15,7 +15,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { EmployeesComponent } from 'src/app/pages/employees/employees.component';
 // import { ToastrModule } from 'ngx-toastr';
+
+
 import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   imports: [
@@ -26,7 +30,9 @@ import {MatTableModule} from '@angular/material/table';
     NgbModule,
     ClipboardModule,
     ComponentsModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   declarations: [
     DashboardComponent,
