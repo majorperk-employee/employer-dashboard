@@ -1,17 +1,23 @@
 <div class="row mt-5">
   <div class="col-xl-12 mb-5 mb-xl-0">
     <div class="card shadow">
-      <div class="card-header border-0 bg-gradient-danger">
+      <div class="card-header border-0 bg-default">
         <div class="row align-items-center">
           <div class="col">
-            <h3 class="mb-0" style="color: white">High Performers</h3>
+            <h3 class="text-white mb-0">High Performers</h3>
           </div>
-          <div class="col text-right">
-            <a class="btn btn-sm btn-primary" style="color: white">Retention %</a>
-            <a class="btn btn-sm btn-primary" style="color: white">Performance</a>
-            <a class="btn btn-sm btn-primary" style="color: white">Behavior</a>
-            <a class="btn btn-sm btn-default" style="color: white">Reetayn Score</a>
-          </div>
+          <!-- <div class="d-flex align-content-stretch justify-content-end flex-wrap">
+            <a class="btn btn-sm btn-primary order-1 p-1" style="color: white">Retention %</a>
+            <a class="btn btn-sm btn-primary order-2 p-1" style="color: white">Performance</a>
+            <a class="btn btn-sm btn-primary order-3 p-2" style="color: white">Behavior</a>
+            <a class="btn btn-sm btn-default order-4 p-2" style="color: white">Reetayn Score</a>
+          </div> -->
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="text-default flex-sm-fill text-sm-center nav-link active mb-1 mt-1 mr-2">Retention %</a>
+            <a class="text-default flex-sm-fill text-sm-center nav-link mb-1 mt-1 mr-2">Performance</a>
+            <a class="text-default flex-sm-fill text-sm-center nav-link mb-1 mt-1 mr-2">Behavior</a>
+            <a class="text-default flex-sm-fill text-sm-center nav-link mb-1 mt-1 mr-2">ReetaynScore</a>
+          </nav>
         </div>
       </div>
       <div class="table-responsive">
@@ -19,15 +25,18 @@
         <table class="table align-items-center table-flush">
           <thead class="bg-gradient-white text-default">
             <tr>
-              <th class="text-center" *ngFor="let team of teams" scope="col">{{team.name}}</th>
+              <th class="bg-light text-center" *ngFor="let team of teams" scope="col">{{team.name}}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td selectable *ngFor="let team of teams" scope="col" class="hover-data">
+              <td selectable *ngFor="let team of teams" scope="col"
+                class="hover-data">
                 <!-- <div class="rounded-circle text-center" style="height: 64px;width: 64px;border-radius: 100%;background:lightgray;"> -->
-                  <p class="text-center" style="font-size: 36px;color:green" *ngIf="team.retention > 90">{{team.retention}}%</p>
-                  <p class="text-center" style="font-size: 36px;color:red" *ngIf="!(team.retention > 90)">{{team.retention}}%</p>
+                <p class="text-center" style="font-size: 36px;color:green"
+                  *ngIf="team.retention> 90">{{team.retention}}%</p>
+                <p class="text-center" style="font-size: 36px;color:red"
+                  *ngIf="!(team.retention> 90)">{{team.retention}}%</p>
                 <!-- </div> -->
               </td>
             </tr>
