@@ -16,6 +16,11 @@ import { ComponentsModule } from 'src/app/components/components.module';
 import { EmployeesComponent } from 'src/app/pages/employees/employees.component';
 // import { ToastrModule } from 'ngx-toastr';
 
+
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,7 +29,10 @@ import { EmployeesComponent } from 'src/app/pages/employees/employees.component'
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    ComponentsModule
+    ComponentsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   declarations: [
     DashboardComponent,

@@ -23,7 +23,7 @@ registerLocaleData(en);
     NgbModule,
     RouterModule,
     ComponentsModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
